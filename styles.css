@@ -1,0 +1,131 @@
+body {
+    font-family: Arial, sans-serif;
+      /* background-color: #f0f0f0; */
+  
+      background-image: url('https://img.freepik.com/free-vector/gorgeous-clouds-background-with-blue-sky-design_1017-25501.jpg?w=1380&t=st=1705121158~exp=1705121758~hmac=4ad80fcee7bcb9681a26489460b76e858b2dd5c0f3bd6c5b04e567c2f86cae05');
+      background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Set the height to fill the viewport */
+    margin: 0; /* Remove default margin */
+    padding: 0; 
+  }
+
+
+.app-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.search-container {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 15PX;
+}
+
+input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #28452a; /* Darker color on hover */
+}
+#weatherDetails , #forecast
+    {
+    text-align: center;
+    margin-top: 20px;
+    /* display: flex;
+    flex-direction: column; */
+    color: bisque;
+    
+    
+}
+
+#forecast{
+    text-align: center;
+    margin-top: 50px; 
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #232c24;
+    /* padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.3);
+ */
+}
+.forecast-item {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.2); /* Translucent white background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@media only screen and (max-width: 600px) {
+    .search-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    input {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    button {
+        margin-right: 0;
+    }
+
+    label.toggle-container {
+        margin-top: 10px;
+    }
+}
+
+/* Media query for tablets (portrait) and larger */
+@media only screen and (min-width: 601px) {
+    .search-container {
+        justify-content: center;
+    }
+
+    input {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    button {
+        margin-right: 10px;
+    }
+
+    label.toggle-container {
+        margin-top: 0;
+    }
+}
+
+/* Media query for desktops and larger */
+@media only screen and (min-width: 1024px) {
+    #weatherDetails {
+        max-width: 800px; /* Adjust as needed */
+        margin: 0 auto; /* Center the weather details on larger screens */
+    }
+}
